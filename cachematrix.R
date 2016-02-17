@@ -43,16 +43,14 @@ makeCacheMatrix <- function(x = matrix()) {
 ## inverse gets Computed using the solve function. 
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
     
+    ## Return a matrix that is the inverse of 'x'
     mINV <- x$getinv()
-
     
+    ## If statement checkes to see If the inverse has already been 
+    ## calculated
     
-        ## If statement checkes to see If the inverse has already been 
-        ## calculated
-                                              
-        if(!is.null(mINV)) {
+    if(!is.null(mINV)) {
         
         ## If yes, than print the following message and get it from Cache     
             
